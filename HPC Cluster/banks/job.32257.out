@@ -1,0 +1,3 @@
+Running on cn8.hpc.itu.dk:
+/var/spool/slurmd/job32257/slurm_script: line 15: 1752121 Killed                  python bank_analysis.py
+slurmstepd: error: Detected 1 oom_kill event in StepId=32257.batch. Some of the step tasks have been OOM Killed.

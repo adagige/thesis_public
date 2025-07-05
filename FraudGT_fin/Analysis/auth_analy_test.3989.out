@@ -1,0 +1,221 @@
+Running on cn10.hpc.itu.dk:
+Filtered these transactions: 0
+Filtered these transactions: 0
+Filtered these transactions: 46646
+Filtered these transactions: 46775
+Index(['Timestamp_x', 'From Bank_x', 'Account_x', 'To Bank_x', 'Account.1_x',
+       'Amount Received_x', 'Receiving Currency_x', 'Amount Paid_x',
+       'Payment Currency_x', 'Payment Format_x', 'Is Laundering_x', 'EdgeID',
+       'from_id_x', 'to_id_x', 'Timestamp_y', 'Amount Sent_x',
+       'Sent Currency_x', 'Amount Received_y', 'Received Currency_x',
+       'Payment Format_y', 'Is Laundering_y', 'Timestamp', 'From Bank_y',
+       'Account_y', 'To Bank_y', 'Account.1_y', 'Amount Received',
+       'Receiving Currency_y', 'Amount Paid_y', 'Payment Currency_y',
+       'Payment Format', 'Is Laundering', 'from_id_y', 'to_id_y',
+       'Amount Sent_y', 'Sent Currency_y', 'Received Currency_y', 'Edge_ID',
+       'Prediction', 'True_Label', 'predicted_label'],
+      dtype='object')
+Timestamp_x              object
+From Bank_x               int64
+Account_x                object
+To Bank_x                 int64
+Account.1_x              object
+Amount Received_x       float64
+Receiving Currency_x     object
+Amount Paid_x           float64
+Payment Currency_x       object
+Payment Format_x         object
+Is Laundering_x           int64
+EdgeID                    int64
+from_id_x                 int64
+to_id_x                   int64
+Timestamp_y               int64
+Amount Sent_x           float64
+Sent Currency_x           int64
+Amount Received_y       float64
+Received Currency_x       int64
+Payment Format_y          int64
+Is Laundering_y           int64
+Timestamp                object
+From Bank_y             float64
+Account_y                object
+To Bank_y               float64
+Account.1_y              object
+Amount Received         float64
+Receiving Currency_y     object
+Amount Paid_y           float64
+Payment Currency_y       object
+Payment Format           object
+Is Laundering           float64
+from_id_y               float64
+to_id_y                 float64
+Amount Sent_y           float64
+Sent Currency_y         float64
+Received Currency_y     float64
+Edge_ID                 float64
+Prediction              float64
+True_Label              float64
+predicted_label         float64
+dtype: object
+Index(['Timestamp_x', 'From Bank_x', 'Account_x', 'To Bank_x', 'Account.1_x',
+       'Amount Received_x', 'Receiving Currency_x', 'Amount Paid_x',
+       'Payment Currency_x', 'Payment Format_x', 'Is Laundering_x', 'EdgeID',
+       'from_id_x', 'to_id_x', 'Timestamp_y', 'Amount Sent_x',
+       'Sent Currency_x', 'Amount Received_y', 'Received Currency_x',
+       'Payment Format_y', 'Is Laundering_y', 'Timestamp', 'From Bank_y',
+       'Account_y', 'To Bank_y', 'Account.1_y', 'Amount Received',
+       'Receiving Currency_y', 'Amount Paid_y', 'Payment Currency_y',
+       'Payment Format', 'Is Laundering', 'from_id_y', 'to_id_y',
+       'Amount Sent_y', 'Sent Currency_y', 'Received Currency_y', 'Edge_ID',
+       'Prediction', 'True_Label', 'predicted_label'],
+      dtype='object')
+Timestamp_x              object
+From Bank_x               int64
+Account_x                object
+To Bank_x                 int64
+Account.1_x              object
+Amount Received_x       float64
+Receiving Currency_x     object
+Amount Paid_x           float64
+Payment Currency_x       object
+Payment Format_x         object
+Is Laundering_x           int64
+EdgeID                    int64
+from_id_x                 int64
+to_id_x                   int64
+Timestamp_y               int64
+Amount Sent_x           float64
+Sent Currency_x           int64
+Amount Received_y       float64
+Received Currency_x       int64
+Payment Format_y          int64
+Is Laundering_y           int64
+Timestamp                object
+From Bank_y             float64
+Account_y                object
+To Bank_y               float64
+Account.1_y              object
+Amount Received         float64
+Receiving Currency_y     object
+Amount Paid_y           float64
+Payment Currency_y       object
+Payment Format           object
+Is Laundering           float64
+from_id_y               float64
+to_id_y                 float64
+Amount Sent_y           float64
+Sent Currency_y         float64
+Received Currency_y     float64
+Edge_ID                 float64
+Prediction              float64
+True_Label              float64
+predicted_label         float64
+dtype: object
+Index(['Timestamp_x', 'From Bank_x', 'Account_x', 'To Bank_x', 'Account.1_x',
+       'Amount Received_x', 'Receiving Currency_x', 'Amount Paid_x',
+       'Payment Currency_x', 'Payment Format_x', 'Is Laundering_x', 'EdgeID',
+       'from_id_x', 'to_id_x', 'Timestamp_y', 'Amount Sent_x',
+       'Sent Currency_x', 'Amount Received_y', 'Received Currency_x',
+       'Payment Format_y', 'Is Laundering_y', 'Timestamp', 'From Bank_y',
+       'Account_y', 'To Bank_y', 'Account.1_y', 'Amount Received',
+       'Receiving Currency_y', 'Amount Paid_y', 'Payment Currency_y',
+       'Payment Format', 'Is Laundering', 'from_id_y', 'to_id_y',
+       'Amount Sent_y', 'Sent Currency_y', 'Received Currency_y', 'Edge_ID',
+       'Prediction', 'True_Label', 'predicted_label'],
+      dtype='object')
+Timestamp_x              object
+From Bank_x               int64
+Account_x                object
+To Bank_x                 int64
+Account.1_x              object
+Amount Received_x       float64
+Receiving Currency_x     object
+Amount Paid_x           float64
+Payment Currency_x       object
+Payment Format_x         object
+Is Laundering_x           int64
+EdgeID                    int64
+from_id_x                 int64
+to_id_x                   int64
+Timestamp_y               int64
+Amount Sent_x           float64
+Sent Currency_x           int64
+Amount Received_y       float64
+Received Currency_x       int64
+Payment Format_y          int64
+Is Laundering_y           int64
+Timestamp                object
+From Bank_y             float64
+Account_y                object
+To Bank_y               float64
+Account.1_y              object
+Amount Received         float64
+Receiving Currency_y     object
+Amount Paid_y           float64
+Payment Currency_y       object
+Payment Format           object
+Is Laundering           float64
+from_id_y               float64
+to_id_y                 float64
+Amount Sent_y           float64
+Sent Currency_y         float64
+Received Currency_y     float64
+Edge_ID                 float64
+Prediction              float64
+True_Label              float64
+predicted_label         float64
+dtype: object
+Index(['Timestamp_x', 'From Bank_x', 'Account_x', 'To Bank_x', 'Account.1_x',
+       'Amount Received_x', 'Receiving Currency_x', 'Amount Paid_x',
+       'Payment Currency_x', 'Payment Format_x', 'Is Laundering_x', 'EdgeID',
+       'from_id_x', 'to_id_x', 'Timestamp_y', 'Amount Sent_x',
+       'Sent Currency_x', 'Amount Received_y', 'Received Currency_x',
+       'Payment Format_y', 'Is Laundering_y', 'Timestamp', 'From Bank_y',
+       'Account_y', 'To Bank_y', 'Account.1_y', 'Amount Received',
+       'Receiving Currency_y', 'Amount Paid_y', 'Payment Currency_y',
+       'Payment Format', 'Is Laundering', 'from_id_y', 'to_id_y',
+       'Amount Sent_y', 'Sent Currency_y', 'Received Currency_y', 'Edge_ID',
+       'Prediction', 'True_Label', 'predicted_label'],
+      dtype='object')
+Timestamp_x              object
+From Bank_x               int64
+Account_x                object
+To Bank_x                 int64
+Account.1_x              object
+Amount Received_x       float64
+Receiving Currency_x     object
+Amount Paid_x           float64
+Payment Currency_x       object
+Payment Format_x         object
+Is Laundering_x           int64
+EdgeID                    int64
+from_id_x                 int64
+to_id_x                   int64
+Timestamp_y               int64
+Amount Sent_x           float64
+Sent Currency_x           int64
+Amount Received_y       float64
+Received Currency_x       int64
+Payment Format_y          int64
+Is Laundering_y           int64
+Timestamp                object
+From Bank_y             float64
+Account_y                object
+To Bank_y               float64
+Account.1_y              object
+Amount Received         float64
+Receiving Currency_y     object
+Amount Paid_y           float64
+Payment Currency_y       object
+Payment Format           object
+Is Laundering           float64
+from_id_y               float64
+to_id_y                 float64
+Amount Sent_y           float64
+Sent Currency_y         float64
+Received Currency_y     float64
+Edge_ID                 float64
+Prediction              float64
+True_Label              float64
+predicted_label         float64
+dtype: object

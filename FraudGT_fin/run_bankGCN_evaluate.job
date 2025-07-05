@@ -1,0 +1,17 @@
+#!/bin/bash
+
+#SBATCH --job-name=evalLI27
+#SBATCH --output=job_logs_banks/eval27.%j.out      # Name of output file (%j expands to jobId)
+#SBATCH --cpus-per-task=4        # Schedule 8 cores (includes hyperthreading)
+#SBATCH --mem=32G
+#SBATCH --exclude=desktop[1-16],cn[16-18] 
+#SBATCH --gres=gpu:1               # Schedule a GPU, or more with gpu:2 etc
+#SBATCH --time=1:00:00          # Run time (hh:mm:ss) - run for one hour max
+#SBATCH --partition=acltr       # Run on GPU queue
+#SBATCH --mail-type=END,FAIL
+
+echo "Running on $(hostname):"
+module load Anaconda3
+source activate fraudGT
+
+python evaluate_bank.py --cfg configs/AML_LI-Large_Bank_27_GCN.yaml out_dir bank_results_GatedGCN/LI-Largebank_27 dataset.dir Data/bank/bank27/LI-Large

@@ -1,0 +1,101 @@
+Running on cn14.hpc.itu.dk:
+Currently processing dataset Hi-Small
+Number of banks in dataset Hi-Small are 5459
+Number of banks with more than 5 transactions in dataset Hi-Small are 1596
+Number of banks with more than 1000 transactions in dataset Hi-Small are 8
+Number of banks with more than 10,000 transactions in dataset Hi-Small are 0
+Number of banks with more than 100,000 transactions in dataset Hi-Small are 0
+Number of banks with more than 1,000,000 transactions in dataset Hi-Small are 0
+Smallest money laundering in Hi-Small are 0.0
+Highest money laundering in Hi-Small are 16.66666666666666
+Average money laundering in Hi-Small are 0.0283972
+The large banks (more than 1 mio.) have money laundery distribution: Series([], Name: money_laundering_fraction, dtype: float64)
+size of largest banks:Series([], Name: transaction_count, dtype: int64)
+Currently processing dataset Li-Small
+Number of banks in dataset Li-Small are 41815
+Number of banks with more than 5 transactions in dataset Li-Small are 20660
+Number of banks with more than 1000 transactions in dataset Li-Small are 1682
+Number of banks with more than 10,000 transactions in dataset Li-Small are 333
+Number of banks with more than 100,000 transactions in dataset Li-Small are 3
+Number of banks with more than 1,000,000 transactions in dataset Li-Small are 0
+Smallest money laundering in Li-Small are 0.0
+Highest money laundering in Li-Small are 4.16666666666666
+Average money laundering in Li-Small are 0.00267371
+The large banks (more than 1 mio.) have money laundery distribution: Series([], Name: money_laundering_fraction, dtype: float64)
+size of largest banks:Series([], Name: transaction_count, dtype: int64)
+Currently processing dataset Hi-Medium
+Number of banks in dataset Hi-Medium are 122333
+Number of banks with more than 5 transactions in dataset Hi-Medium are 68297
+Number of banks with more than 1000 transactions in dataset Hi-Medium are 5604
+Number of banks with more than 10,000 transactions in dataset Hi-Medium are 1711
+Number of banks with more than 100,000 transactions in dataset Hi-Medium are 20
+Number of banks with more than 1,000,000 transactions in dataset Hi-Medium are 1
+Smallest money laundering in Hi-Medium are 0.0
+Highest money laundering in Hi-Medium are 100.0
+Average money laundering in Hi-Medium are 0.00580061
+The large banks (more than 1 mio.) have money laundery distribution: 52    0.140838
+Name: money_laundering_fraction, dtype: float64
+size of largest banks:52    2979311
+Name: transaction_count, dtype: int64
+Currently processing dataset Li-Medium
+Number of banks in dataset Li-Medium are 119617
+Number of banks with more than 5 transactions in dataset Li-Medium are 66659
+Number of banks with more than 1000 transactions in dataset Li-Medium are 5448
+Number of banks with more than 10,000 transactions in dataset Li-Medium are 1689
+Number of banks with more than 100,000 transactions in dataset Li-Medium are 15
+Number of banks with more than 1,000,000 transactions in dataset Li-Medium are 1
+Smallest money laundering in Li-Medium are 0.0
+Highest money laundering in Li-Medium are 14.28571428571428
+Average money laundering in Li-Medium are 0.00337939
+The large banks (more than 1 mio.) have money laundery distribution: 56    0.141232
+Name: money_laundering_fraction, dtype: float64
+size of largest banks:56    2905143
+Name: transaction_count, dtype: int64
+Currently processing dataset Hi-Large
+Number of banks in dataset Hi-Large are 122333
+Number of banks with more than 5 transactions in dataset Hi-Large are 95672
+Number of banks with more than 1000 transactions in dataset Hi-Large are 6513
+Number of banks with more than 10,000 transactions in dataset Hi-Large are 4911
+Number of banks with more than 100,000 transactions in dataset Hi-Large are 866
+Number of banks with more than 1,000,000 transactions in dataset Hi-Large are 6
+Smallest money laundering in Hi-Large are 0.0
+Highest money laundering in Hi-Large are 4.404567699836861
+Average money laundering in Hi-Large are 0.00544775
+The large banks (more than 1 mio.) have money laundery distribution: 0     0.293582
+11    0.249820
+12    0.222606
+20    0.306141
+27    0.151264
+52    0.141153
+Name: money_laundering_fraction, dtype: float64
+size of largest banks:0      1207498
+11     1296131
+12     1300052
+20     1178870
+27     1245503
+52    17226741
+Name: transaction_count, dtype: int64
+Currently processing dataset Li-Large
+Number of banks in dataset Li-Large are 119619
+Number of banks with more than 5 transactions in dataset Li-Large are 93222
+Number of banks with more than 1000 transactions in dataset Li-Large are 6318
+Number of banks with more than 10,000 transactions in dataset Li-Large are 4810
+Number of banks with more than 100,000 transactions in dataset Li-Large are 858
+Number of banks with more than 1,000,000 transactions in dataset Li-Large are 6
+Smallest money laundering in Li-Large are 0.0
+Highest money laundering in Li-Large are 4.76190476190476
+Average money laundering in Li-Large are 0.00354047
+The large banks (more than 1 mio.) have money laundery distribution: 0     0.058008
+11    0.058130
+12    0.052009
+20    0.048627
+27    0.040522
+57    0.140827
+Name: money_laundering_fraction, dtype: float64
+size of largest banks:0      1153290
+11     1324608
+12     1203631
+20     1151635
+27     1061153
+57    16800036
+Name: transaction_count, dtype: int64

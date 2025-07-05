@@ -1,0 +1,30 @@
+Running on cn8.hpc.itu.dk:
+Precision: 0.78
+Recall: 0.44
+F1-Score: 0.56
+
+Classification Report:
+Traceback (most recent call last):
+  File "/home/adgi/.conda/envs/fraudGT/lib/python3.12/site-packages/pandas/core/indexes/base.py", line 3805, in get_loc
+    return self._engine.get_loc(casted_key)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "index.pyx", line 167, in pandas._libs.index.IndexEngine.get_loc
+  File "index.pyx", line 196, in pandas._libs.index.IndexEngine.get_loc
+  File "pandas/_libs/hashtable_class_helper.pxi", line 7081, in pandas._libs.hashtable.PyObjectHashTable.get_item
+  File "pandas/_libs/hashtable_class_helper.pxi", line 7089, in pandas._libs.hashtable.PyObjectHashTable.get_item
+KeyError: 'Prediction'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/adgi/FraudGT/Analysis/analysis_auth_testdata.py", line 150, in <module>
+    patterns_transactions(model_data, patterns_HI,model_name )
+  File "/home/adgi/FraudGT/Analysis/analysis_auth_testdata.py", line 76, in patterns_transactions
+    patterns['predicted_binary'] = patterns['Prediction']# [1 if prob >= threshold else 0 for prob in y_pred_prob]
+                                   ~~~~~~~~^^^^^^^^^^^^^^
+  File "/home/adgi/.conda/envs/fraudGT/lib/python3.12/site-packages/pandas/core/frame.py", line 4102, in __getitem__
+    indexer = self.columns.get_loc(key)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/adgi/.conda/envs/fraudGT/lib/python3.12/site-packages/pandas/core/indexes/base.py", line 3812, in get_loc
+    raise KeyError(key) from err
+KeyError: 'Prediction'

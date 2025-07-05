@@ -1,0 +1,5 @@
+Running on cn8.hpc.itu.dk:
+  File "/home/adgi/FraudGT/banks/bank_analysis.py", line 69
+    'Hi-Large': '../Data/AML/HI-Large_Trans.csv', 
+              ^
+SyntaxError: invalid syntax

@@ -1,0 +1,58 @@
+#!/bin/bash
+
+#SBATCH --job-name=evalauth
+#SBATCH --output=job_logs_banks/autheval.%j.out      # Name of output file (%j expands to jobId)
+#SBATCH --cpus-per-task=4        # Schedule 8 cores (includes hyperthreading)
+#SBATCH --mem=32G
+#SBATCH --exclude=desktop[1-16],cn[16-18] 
+#SBATCH --gres=gpu:1               # Schedule a GPU, or more with gpu:2 etc
+#SBATCH --time=1:00:00          # Run time (hh:mm:ss) - run for one hour max
+#SBATCH --partition=acltr       # Run on GPU queue
+#SBATCH --mail-type=END,FAIL
+
+echo "Running on $(hostname):"
+module load Anaconda3
+source activate fraudGT
+
+
+#Before evaluating remember to move the best model back into the ckpt folder of the model
+
+#FraudGT banks with different auth models 
+# python evaluate_auth.py --cfg configs/AML_HI-Large_auth_BFGT_GCN.yaml out_dir bank_results/HI-Large_auth_GCN dataset.dir Data/authBFGT_GCN/HI-Large pretrained.dir bank_results/HI-Large_auth_GCN/AML_HI-Large_auth_BFGT_GCN
+# python evaluate_auth.py --cfg configs/AML_LI-Large_auth_BFGT_GCN.yaml out_dir bank_results/LI-Large_auth_GCN dataset.dir Data/authBFGT_GCN/LI-Large pretrained.dir bank_results/LI-Large_auth_GCN/AML_LI-Large_auth_BFGT_GCN
+
+# FraudGT with FraudGT
+# python evaluate_auth.py --cfg configs/AML_HI-Large_auth_BFGT_FraudGT.yaml out_dir bank_results/HI-Large_auth_FraudGT dataset.dir Data/authBFGT_FraudGT/HI-Large pretrained.dir bank_results/HI-Large_auth_FraudGT/AML_HI-Large_auth_BFGT_FraudGT
+# python evaluate_auth.py --cfg configs/AML_LI-Large_auth_BFGT_FraudGT.yaml out_dir bank_results/LI-Large_auth_FraudGT dataset.dir Data/authBFGT_FraudGT/LI-Large pretrained.dir bank_results/LI-Large_auth_FraudGT/AML_LI-Large_auth_BFGT_FraudGT
+
+# #GCN banks with fraudgt auth
+python evaluate_auth.py --cfg configs/AML_HI-Large_auth_BGCN_FraudGT.yaml out_dir bank_results_GatedGCN/HI-Large_auth_FraudGT dataset.dir Data/authBGCN_FraudGT/HI-Large pretrained.dir bank_results_GatedGCN/HI-Large_auth_FraudGT/AML_HI-Large_auth_BGCN_FraudGT
+# python evaluate_auth.py --cfg configs/AML_LI-Large_auth_BGCN_FraudGT.yaml out_dir bank_results_GatedGCN/LI-Large_auth_FraudGT dataset.dir Data/authBGCN_FraudGT/LI-Large pretrained.dir bank_results_GatedGCN/LI-Large_auth_FraudGT/AML_LI-Large_auth_BGCN_FraudGT
+
+#GCN banks with GCN auth
+# python evaluate_auth.py --cfg configs/AML_HI-Large_auth_BGCN_GCN.yaml out_dir bank_results_GatedGCN/HI-Large_auth_GCN dataset.dir Data/authBGCN_GCN/HI-Large pretrained.dir bank_results_GatedGCN/HI-Large_auth_GCN/AML_HI-Large_auth_BGCN_GCN
+# python evaluate_auth.py --cfg configs/AML_LI-Large_auth_BGCN_GCN.yaml out_dir bank_results_GatedGCN/LI-Large_auth_GCN dataset.dir Data/authBGCN_GCN/LI-Large pretrained.dir bank_results_GatedGCN/LI-Large_auth_GCN/AML_LI-Large_auth_BGCN_GCN
+
+
+
+
+
+
+
+
+
+
+
+
+
+#python evaluate_bank.py --cfg configs/AML_HI-Large_auth_BFGT_FraudGT.yaml out_dir bank_results/HI-Large_auth_FraudGT dataset.dir Data/authBFGT_FraudGT/HI-Large
+
+
+#GatedGCN banks with different auth models:
+#python evaluate_bank.py --cfg configs/AML_HI-Large_auth_BGCN_FraudGT.yaml out_dir bank_results_GatedGCN/HI-Large_auth_FraudGT dataset.dir Data/authBGCN_FraudGT/HI-Large
+
+
+#python evaluate_bank.py --cfg configs/AML_HI-Large_auth_BGCN_GCN.yaml out_dir bank_results_GatedGCN/HI-Large_auth_GCN dataset.dir Data/authBGCN_GCN/HI-Large
+
+
+

@@ -1,0 +1,40 @@
+#!/bin/bash
+
+#SBATCH --job-name=evLIAB
+#SBATCH --output=job_logs_banks/evLIAB.%j.out      # Name of output file (%j expands to jobId)
+#SBATCH --cpus-per-task=18        # Schedule 8 cores (includes hyperthreading)
+#SBATCH --mem=32G
+#SBATCH --exclude=desktop[1-16],cn[16-18]
+#SBATCH --gres=gpu:1               # Schedule a GPU, or more with gpu:2 etc
+#SBATCH --time=4:00:00          # Run time (hh:mm:ss) - run for one hour max
+#SBATCH --partition=acltr       # Run on GPU queue
+#SBATCH --mail-type=END,FAIL
+
+echo "Running on $(hostname):"
+module load Anaconda3
+source activate fraudGT
+
+python evaluate_bank.py --cfg configs/AML_LI-Large_Bank_0_GCN.yaml out_dir bank_results_GatedGCN/LI-Largebank_0 dataset.dir Data/bank/bank0/LI-Large pretrained.dir bank_results_GatedGCN/LI-Largebank_0/AML_LI-Large_Bank_0_GCN 
+
+python evaluate_bank.py --cfg configs/AML_LI-Large_Bank_11_GCN.yaml out_dir bank_results_GatedGCN/LI-Largebank_11 dataset.dir Data/bank/bank11/LI-Large pretrained.dir bank_results_GatedGCN/LI-Largebank_11/AML_LI-Large_Bank_11_GCN
+
+python evaluate_bank.py --cfg configs/AML_LI-Large_Bank_12_GCN.yaml out_dir bank_results_GatedGCN/LI-Largebank_12 dataset.dir Data/bank/bank12/LI-Large pretrained.dir bank_results_GatedGCN/LI-Largebank_12/AML_LI-Large_Bank_12_GCN
+
+python evaluate_bank.py --cfg configs/AML_LI-Large_Bank_20_GCN.yaml out_dir bank_results_GatedGCN/LI-Largebank_20 dataset.dir Data/bank/bank20/LI-Large pretrained.dir bank_results_GatedGCN/LI-Largebank_20/AML_LI-Large_Bank_20_GCN
+
+python evaluate_bank.py --cfg configs/AML_LI-Large_Bank_27_GCN.yaml out_dir bank_results_GatedGCN/LI-Largebank_27 dataset.dir Data/bank/bank27/LI-Large pretrained.dir bank_results_GatedGCN/LI-Largebank_27/AML_LI-Large_Bank_27_GCN
+
+python evaluate_bank.py --cfg configs/AML_LI-Large_Bank_70_GCN.yaml out_dir bank_results_GatedGCN/LI-Largebank_70 dataset.dir Data/bank/bank70/LI-Large pretrained.dir bank_results_GatedGCN/LI-Largebank_70/AML_LI-Large_Bank_70_GCN
+
+
+python evaluate_bank.py --cfg configs/AML_LI-Large_Bank_0.yaml out_dir bank_results/LI-Largebank_0 dataset.dir Data/bank/bank0/LI-Large pretrained.dir bank_results/LI-Largebank_0/AML_LI-Large_Bank_0 
+
+python evaluate_bank.py --cfg configs/AML_LI-Large_Bank_11.yaml out_dir bank_results/LI-Largebank_11 dataset.dir Data/bank/bank11/LI-Large pretrained.dir bank_results/LI-Largebank_11/AML_LI-Large_Bank_11
+
+python evaluate_bank.py --cfg configs/AML_LI-Large_Bank_12.yaml out_dir bank_results/LI-Largebank_12 dataset.dir Data/bank/bank12/LI-Large pretrained.dir bank_results/LI-Largebank_12/AML_LI-Large_Bank_12
+
+python evaluate_bank.py --cfg configs/AML_LI-Large_Bank_20.yaml out_dir bank_results/LI-Largebank_20 dataset.dir Data/bank/bank20/LI-Large pretrained.dir bank_results/LI-Largebank_20/AML_LI-Large_Bank_20
+
+python evaluate_bank.py --cfg configs/AML_LI-Large_Bank_27.yaml out_dir bank_results/LI-Largebank_27 dataset.dir Data/bank/bank27/LI-Large pretrained.dir bank_results/LI-Largebank_27/AML_LI-Large_Bank_27
+
+python evaluate_bank.py --cfg configs/AML_LI-Large_Bank_70.yaml out_dir bank_results/LI-Largebank_70 dataset.dir Data/bank/bank70/LI-Large pretrained.dir bank_results/LI-Largebank_70/AML_LI-Large_Bank_70

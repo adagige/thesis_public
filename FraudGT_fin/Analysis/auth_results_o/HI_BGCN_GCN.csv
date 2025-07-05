@@ -1,0 +1,4 @@
+,Not-Fraud,Fraud
+not received,5818306,9940
+predicted not-fraud,564255,3785
+predicted fraud,16746917,26319

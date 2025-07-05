@@ -1,0 +1,27 @@
+Running on cn8.hpc.itu.dk:
+Precision: 0.78
+Recall: 0.44
+F1-Score: 0.56
+
+Classification Report:
+Traceback (most recent call last):
+  File "/home/adgi/FraudGT/Analysis/analysis_auth_testdata.py", line 150, in <module>
+    patterns_transactions(model_data, patterns_HI,model_name )
+  File "/home/adgi/FraudGT/Analysis/analysis_auth_testdata.py", line 64, in patterns_transactions
+    merged_df = data.merge(
+                ^^^^^^^^^^^
+  File "/home/adgi/.conda/envs/fraudGT/lib/python3.12/site-packages/pandas/core/frame.py", line 10832, in merge
+    return merge(
+           ^^^^^^
+  File "/home/adgi/.conda/envs/fraudGT/lib/python3.12/site-packages/pandas/core/reshape/merge.py", line 170, in merge
+    op = _MergeOperation(
+         ^^^^^^^^^^^^^^^^
+  File "/home/adgi/.conda/envs/fraudGT/lib/python3.12/site-packages/pandas/core/reshape/merge.py", line 794, in __init__
+    ) = self._get_merge_keys()
+        ^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/adgi/.conda/envs/fraudGT/lib/python3.12/site-packages/pandas/core/reshape/merge.py", line 1310, in _get_merge_keys
+    left_keys.append(left._get_label_or_level_values(lk))
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/adgi/.conda/envs/fraudGT/lib/python3.12/site-packages/pandas/core/generic.py", line 1911, in _get_label_or_level_values
+    raise KeyError(key)
+KeyError: 'Timestamp_x'

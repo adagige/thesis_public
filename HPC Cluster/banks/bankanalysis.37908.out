@@ -1,0 +1,43 @@
+Running on cn14.hpc.itu.dk:
+Currently processing dataset Hi-Small
+Number of banks in dataset Hi-Small are 5459
+Number of banks with more than 5 transactions in dataset Hi-Small are 1596
+Number of banks with more than 1000 transactions in dataset Hi-Small are 8
+Number of banks with more than 10,000 transactions in dataset Hi-Small are 0
+Number of banks with more than 100,000 transactions in dataset Hi-Small are 0
+Number of banks with more than 1,000,000 transactions in dataset Hi-Small are 0
+Currently processing dataset Li-Small
+Number of banks in dataset Li-Small are 41815
+Number of banks with more than 5 transactions in dataset Li-Small are 20660
+Number of banks with more than 1000 transactions in dataset Li-Small are 1682
+Number of banks with more than 10,000 transactions in dataset Li-Small are 333
+Number of banks with more than 100,000 transactions in dataset Li-Small are 3
+Number of banks with more than 1,000,000 transactions in dataset Li-Small are 0
+Currently processing dataset Hi-Medium
+Number of banks in dataset Hi-Medium are 122333
+Number of banks with more than 5 transactions in dataset Hi-Medium are 68297
+Number of banks with more than 1000 transactions in dataset Hi-Medium are 5604
+Number of banks with more than 10,000 transactions in dataset Hi-Medium are 1711
+Number of banks with more than 100,000 transactions in dataset Hi-Medium are 20
+Number of banks with more than 1,000,000 transactions in dataset Hi-Medium are 1
+Currently processing dataset Li-Medium
+Number of banks in dataset Li-Medium are 119617
+Number of banks with more than 5 transactions in dataset Li-Medium are 66659
+Number of banks with more than 1000 transactions in dataset Li-Medium are 5448
+Number of banks with more than 10,000 transactions in dataset Li-Medium are 1689
+Number of banks with more than 100,000 transactions in dataset Li-Medium are 15
+Number of banks with more than 1,000,000 transactions in dataset Li-Medium are 1
+Currently processing dataset Hi-Large
+Number of banks in dataset Hi-Large are 122333
+Number of banks with more than 5 transactions in dataset Hi-Large are 95672
+Number of banks with more than 1000 transactions in dataset Hi-Large are 6513
+Number of banks with more than 10,000 transactions in dataset Hi-Large are 4911
+Number of banks with more than 100,000 transactions in dataset Hi-Large are 866
+Number of banks with more than 1,000,000 transactions in dataset Hi-Large are 6
+Currently processing dataset Li-Large
+Number of banks in dataset Li-Large are 119619
+Number of banks with more than 5 transactions in dataset Li-Large are 93222
+Number of banks with more than 1000 transactions in dataset Li-Large are 6318
+Number of banks with more than 10,000 transactions in dataset Li-Large are 4810
+Number of banks with more than 100,000 transactions in dataset Li-Large are 858
+Number of banks with more than 1,000,000 transactions in dataset Li-Large are 6

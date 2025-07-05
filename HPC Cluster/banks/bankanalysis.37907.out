@@ -1,0 +1,13 @@
+Running on cn14.hpc.itu.dk:
+Currently processing dataset Hi-Small
+Number of banks in dataset Hi-Small are 5459
+Number of banks with more than 5 transactions in dataset Hi-Small are 1596
+Number of banks with more than 1000 transactions in dataset Hi-Small are 8
+Number of banks with more than 10,000 transactions in dataset Hi-Small are 0
+Number of banks with more than 100,000 transactions in dataset Hi-Small are 0
+Number of banks with more than 1,000,000 transactions in dataset Hi-Small are 0
+Traceback (most recent call last):
+  File "/home/adgi/FraudGT/banks/bank_analysis.py", line 29, in <module>
+    plt.savefig(f'bank_analysis/{DatasetName}_ML_fraction.png')
+                                 ^^^^^^^^^^^
+NameError: name 'DatasetName' is not defined

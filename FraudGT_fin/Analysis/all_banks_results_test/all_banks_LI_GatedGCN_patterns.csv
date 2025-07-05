@@ -1,0 +1,9 @@
+Laundering Type,Correct,False,Correct_percent,False_percent
+ BIPARTITE,0,1,0.0,1
+ CYCLE,1,1,0.5,0
+ FAN-IN,2,0,1.0,-1
+ FAN-OUT,1,0,1.0,0
+ GATHER-SCATTER,1,3,0.25,0
+ RANDOM,1,1,0.5,0
+ SCATTER-GATHER,0,1,0.0,1
+ STACK,1,2,0.3333333333333333,0
